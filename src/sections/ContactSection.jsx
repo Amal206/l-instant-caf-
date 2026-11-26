@@ -1,12 +1,21 @@
-import { Clock, Map as MapIcon, MapPin, Navigation } from 'lucide-react';
+import {
+  Clock,
+  Map as MapIcon,
+  MapPin,
+  Navigation,
+  Phone,
+} from 'lucide-react';
 import Button from '../components/Button';
 import ScrollReveal from '../components/ScrollReveal';
 import SectionHeading from '../components/SectionHeading';
 import {
+  PHONE_LINK,
   ADDRESS_LINES,
   GOOGLE_MAPS_LINKS,
   MAP_EMBED_URL,
   OPENING_HOURS,
+  PHONE_NUMBER,
+  
 } from '../data/siteConfig';
 
 /**
@@ -21,6 +30,15 @@ export default function ContactSection() {
 
           <ScrollReveal delay={0.15}>
             <ul className="contact__list">
+              <li>
+  <span className="contact__icon" aria-hidden="true">
+    <Phone size={18} strokeWidth={1.6} />
+  </span>
+  <div>
+    <strong>Téléphone</strong>
+    <a href={PHONE_LINK}>{PHONE_NUMBER}</a>
+  </div>
+</li>
               <li>
                 <span className="contact__icon" aria-hidden="true">
                   <MapPin size={18} strokeWidth={1.6} />

@@ -3,7 +3,8 @@
  * Aucune coordonnée GPS n’est utilisée : l’adresse officielle sert de requête.
  */
 export const SITE_NAME = 'L’instant';
-
+export const PHONE_NUMBER = '+216 50 450 780';
+export const PHONE_LINK = `tel:${PHONE_NUMBER.replace(/\s/g, '')}`;
 export const ADDRESS = 'Rue Colonel Garnaoui, Khzama Est, Sousse, Tunisia';
 export const ADDRESS_LINES = ['Rue Colonel Garnaoui', 'Khzama Est, Sousse', 'Tunisie'];
 
